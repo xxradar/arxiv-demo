@@ -6,13 +6,15 @@ This repository accompanies the draft paper:
 It illustrates how a Large Language Model (LLM), when connected to tools via the Model Context Protocol (MCP), may engage in *toxic reasoning* that extends its own environment by creating new MCP servers.
 
 ## Reasoning Chain Diagram
+## Reasoning Chain Diagram
 
 ```mermaid
 flowchart TD
-    A[LLM detects missing capability] --> B[Reasoning: "Build an MCP server"]
-    B --> C[Uses available tools: File I/O + Code Execution]
-    C --> D[Spawns new MCP server]
-    D --> E[Expanded tool surface (rogue entry point)]
+    A[LLM detects missing capability]
+    A --> B[Reasoning step: Build an MCP server]
+    B --> C[Tool composition: File I/O + Code Execution]
+    C --> D[New MCP server spawned]
+    D --> E[Expanded tool surface → Rogue entry point]
 ```
 
 ## Paper Outline
