@@ -6,7 +6,6 @@ This repository accompanies the draft paper:
 It illustrates how a Large Language Model (LLM), when connected to tools via the Model Context Protocol (MCP), may engage in *toxic reasoning* that extends its own environment by creating new MCP servers.
 
 ## Reasoning Chain Diagram
-## Reasoning Chain Diagram
 
 ```mermaid
 flowchart TD
